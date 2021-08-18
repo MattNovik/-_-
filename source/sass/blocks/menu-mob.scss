@@ -1,0 +1,81 @@
+.menu-mob {
+
+	&.menu-mob_closed {
+			display: none;
+	}
+
+	@media (max-width:$tablet-width) {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		display: flex;
+		height:100%;
+		background: #fff;
+		z-index: 200; 
+	}
+
+	&.menu-mob_no-js {
+
+		@media (max-width:$tablet-width) {
+			position: absolute;
+			height:150px;
+			width:auto;
+			top:50px;
+
+
+			.menu-mob__list {
+				margin:0;
+			}
+
+			&.menu-mob_closed {
+				display: flex;
+			}
+
+		}
+	}
+}
+
+.menu-mob__list {
+
+	a {
+		display: flex;
+		align-items:center;
+		width:100%;
+		height:100%;
+		margin:17px 0 17px 16px;
+	}
+
+	@media (max-width:$tablet-width) {
+		width:100%;
+		height:auto;
+		margin:134px 0 0 0;
+		padding:0;
+		list-style-type: none;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 140%;
+		color: #48494D;
+	}
+}
+.menu-mob__list li {
+
+	@media (max-width:$tablet-width) {
+		position: relative;
+		height:60px;
+		margin:0 0 30px 0;
+		box-sizing:border-box;
+		background: #FBF8F8;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top:23px;
+			right:25px;
+			width:8px;
+			height:12px;
+			background: url("../img/shape.svg") no-repeat;
+		}
+	}
+}

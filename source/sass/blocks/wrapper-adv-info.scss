@@ -1,0 +1,27 @@
+.wrapper-adv-info {
+	width:1170px;
+	height:100%;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	margin:0 auto;
+	color:#fff;
+
+	@media (max-width:$tablet-width) {
+		width:747px;
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		width:320px;
+		height:auto;
+	}
+}
+.wrapper-adv-info__plug {
+
+	@media (max-width:$tablet-width) {
+		display: none;
+	}
+}

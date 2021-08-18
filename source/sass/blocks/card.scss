@@ -1,0 +1,147 @@
+.card {
+	position: relative;
+	width:350px;
+	height:430px;
+	display: flex;
+	justify-content:center;
+	align-items:flex-end;
+
+	&:hover {
+		.card__hover_closed {
+			display: flex;
+		}
+	}
+
+	@media (max-width:$tablet-width) {
+		width:288px;
+		height:425px;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		margin:35px 0 0 0;
+	}
+}
+.card:first-child {
+	margin:0 auto 0 0;
+
+	@media (max-width:$tablet-width) {
+		margin:0 40px 0 0;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		margin:0 0 0 0;
+	}
+}
+.card:nth-child(3) {
+	margin:0 0 0 auto;
+
+	@media (max-width:$tablet-width) {
+		margin:40px 40px 0 0;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		margin:35px 0 0 0;
+	}
+}
+.card:nth-child(4) {
+	margin:100px 120px 0 0;
+
+	@media (max-width:$tablet-width) {
+		margin:40px 0 0 0;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		margin:35px 0 0 0;
+	}
+}
+.card:nth-child(5) {
+	margin:100px 0 0 0; 
+
+	@media (max-width:$tablet-width) {
+		margin:40px 0 0 0;
+	}
+
+	@media (max-width:$mobile-width-only) {
+		margin:35px 0 0 0;
+	}
+}
+.card_greece {
+	background-image: url("../img/greeceTabDesk.jpg");
+
+	@media (min-resolution: 2dppx) {
+		background-image: url("../img/greeceTabDesk@2x.jpg");
+	}
+}
+.card_albanium {
+	background-image: url("../img/albaniaTabDesk.jpg");
+
+	@media (min-resolution: 2dppx) {
+		background-image: url("../img/albaniaTabDesk@2x.jpg");
+	}
+}
+.card_maked {
+	background-image: url("../img/makedoniaTabDesk.jpg");
+
+	@media (min-resolution: 2dppx) {
+		background-image: url("../img/makedoniaTabDesk@2x.jpg");
+	}
+}
+.card_cherno {
+	background-image: url("../img/chernogoriaTabDesk.jpg");
+
+	@media (min-resolution: 2dppx) {
+		background-image: url("../img/chernogoriaTabDesk@2x.jpg");
+	}
+}
+.card_croatia {
+	background-image: url("../img/croatiaTabDesk.jpg");
+
+	@media (min-resolution: 2dppx) {
+		background-image: url("../img/croatiaTabDesk@2x.jpg");
+	}
+}
+.card__name {
+	width:215px;
+	height:63px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	background:#fff;
+	margin:0;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.415px;
+}
+
+.card__hover {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(20, 21, 23, 0.6);;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+
+	button {
+		width:266px;
+		height:77px;
+		border:solid 1px rgba(255, 255, 255, 0.7);
+		background: transparent;
+		text-transform: uppercase;
+		color:#fff;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 2px;
+	}
+}
+
+.card__hover_closed {
+	display: none;
+
+}
